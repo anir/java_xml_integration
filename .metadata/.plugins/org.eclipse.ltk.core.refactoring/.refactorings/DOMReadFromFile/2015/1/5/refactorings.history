@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private void getTextFromElement(Customer customer, Element custElement)&apos; from &apos;com.example.dom.read.DOMReader.getDataFromXML()&apos; to &apos;com.example.dom.read.DOMReader&apos;&#x0D;&#x0A;- Original project: &apos;DOMReadFromFile&apos;&#x0D;&#x0A;- Method name: &apos;getTextFromElement&apos;&#x0D;&#x0A;- Destination type: &apos;com.example.dom.read.DOMReader&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;getTextFromElement&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;com.example.dom.read{DOMReader.java" name="getTextFromElement" replace="false" selection="1533 162" stamp="1422725323694" version="1.0" visibility="2"/>
+</session>

@@ -1,0 +1,17 @@
+package com.anirbandas.webclient;
+
+import java.rmi.RemoteException;
+
+import com.xmlme.WebServices.ShakespeareSoapProxy;
+
+public class WebClient {
+
+	public static void main(String[] args) throws RemoteException {
+		// TODO Auto-generated method stub
+		System.out.println("Webclient..");
+		ShakespeareSoapProxy proxy = new ShakespeareSoapProxy("http://www.xmlme.com/WSShakespeare.asmx:7397");
+		String qoute= "All that glitters is not gold";
+		System.out.println(qoute +" is from "+ proxy.getSpeech(qoute));
+	}
+
+}

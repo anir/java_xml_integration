@@ -1,0 +1,14 @@
+package com.jdom.org;
+
+import java.util.List;
+
+import com.example.dataprovider.DataProvider;
+import com.example.model.Customer;
+
+public class CreateXmlWithJdom {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Customer> data = DataProvider.getData(DataProvider.MEDIUM);
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.jdom.org;
+
+import org.jdom2.Document;
+
+public class JdomCreator {
+
+	public JdomCreator(){
+		
+		
+	}
+	
+	public Document createXmlDocument(List<Customer> customer){
+		
+	}
+}

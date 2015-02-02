@@ -1,0 +1,5 @@
+package com.jdom.org;
+
+public class CreateXmlWithJdom {
+
+}

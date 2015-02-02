@@ -1,0 +1,29 @@
+package com.jdom.org;
+
+import java.util.List;
+
+import org.jdom2.Document;
+import org.jdom2.Element;
+
+import com.example.model.Customer;
+
+public class JdomCreator {
+
+	public JdomCreator(){
+		
+		
+	}
+	
+	public Document createXmlDocument(List<Customer> data){
+		Document doc = new Document();
+		Element root = new Element("customers");
+		doc.addContent(root);
+		
+		for (Customer customer : data) {
+			Element custElement = new Element("customer");
+			root.addContent(custElement);
+		}
+		
+		return doc;
+	}
+}

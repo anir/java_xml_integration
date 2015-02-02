@@ -1,0 +1,9 @@
+package com.jdom.org;
+
+public class JdomCreator {
+
+	public JdomCreator(){
+		
+		
+	}
+}

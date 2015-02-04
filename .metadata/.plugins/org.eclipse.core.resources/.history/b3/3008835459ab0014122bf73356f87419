@@ -1,0 +1,47 @@
+package com.jdom.org;
+
+import java.io.StringWriter;
+import java.util.List;
+
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
+import org.jdom2.Document;
+import org.jdom2.Element;
+import org.w3c.dom.Node;
+
+import com.example.dataprovider.DataProvider;
+import com.example.model.Customer;
+
+public class CreateXmlWithJdom {
+	public static void main(String[] args) throws TransformerException {
+		// TODO Auto-generated method stub
+		List<Customer> data = DataProvider.getData(DataProvider.MEDIUM);
+		
+		JdomCreator creator = new JdomCreator();
+		org.w3c.dom.Document doc = (org.w3c.dom.Document) creator.createXmlDocument(data);
+		//List<Element> list = doc.getRootElement().getChildren();
+		//System.out.println("retrived" + list.size());
+		  
+		DOMSource source = new DOMSource(doc);
+		StringWriter writer = new StringWriter();
+		StreamResult result = new StreamResult(writer);
+		TransformerFactory factory = TransformerFactory.newInstance();
+		Transformer transformer = factory.newTransformer();
+		
+		transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+		transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+		
+		transformer.transform(source, result);
+		
+String xmlString = writer.toString();
+		
+		System.out.println(xmlString);
+	}
+
+}

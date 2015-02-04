@@ -1,0 +1,44 @@
+package com.jdom.org;
+
+import java.util.List;
+
+import org.jdom2.Document;
+import org.jdom2.Element;
+
+import com.example.model.Customer;
+
+public class JdomCreator {
+
+	public JdomCreator(){
+		
+		
+	}
+	
+	public Document createXmlDocument(List<Customer> data){
+		Document doc = new Document();
+		Element root = new Element("customers");
+		doc.addContent(root);
+		
+		for (Customer customer : data) {
+			Element custElement = new Element("customer");
+			root.addContent(custElement);
+			addChildElement(custElement, Customer.NAME, customer.getName());
+			addChildElement(custElement, Customer.PHONE, customer.getName());
+			addChildElement(custElement, Customer.AGE, Integer.toString(customer.getAge()));
+			addChildElement(custElement, Customer.BALANCE, customer.getName());
+			addChildElement(custElement, Customer.ABOUT, customer.getName());
+			addChildElement(custElement, Customer.ACTIVE, customer.getName());
+			addChildElement(custElement, Customer.JOINED, customer.getName());
+		}
+		
+		return doc;
+	}
+	
+	// to add child elements to an given parent element
+	private void addChildElement(Element parentElement, String elementName, String textValue){
+		Element child= new Element(elementName);
+		child.setText(textValue);
+		parentElement.addContent(child);
+		
+	}
+}

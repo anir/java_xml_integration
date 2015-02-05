@@ -1,0 +1,8 @@
+package com.jdom.read;
+
+public class JDOMReader {
+	private static final String XMLDATEFORMAT="yyyy-MM-dd'T'HH:mm:ss";
+	
+
+
+}

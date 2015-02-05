@@ -3,16 +3,17 @@
 	<section name="ExternalProjectImportWizard">
 		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
-		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="E:\e-learning\java_database_api\Ex_Files_Java_JDBC\Ex_Files_Java_JDBC\Exercise Files\02_GettingStarted\ConnectHSQLDB"/>
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
 			<item value="E:\e-learning\java_xml_integration\Ex_Files_XML_Java\Ex_Files_XML_Java\Exercise Files\03_DOM\DOMReadFromFile.zip"/>
 			<item value="E:\e-learning\java_xml_integration\Ex_Files_XML_Java\Ex_Files_XML_Java\Exercise Files\03_DOM\DOMTransform.zip"/>
 			<item value="E:\e-learning\java_xml_integration\Ex_Files_XML_Java\Ex_Files_XML_Java\Exercise Files\03_DOM\DOMToXMLFile.zip"/>
 			<item value="E:\e-learning\java_xml_integration\Ex_Files_XML_Java\Ex_Files_XML_Java\Exercise Files\03_DOM\DOMTextAsCDATA.zip"/>
-			<item value="E:\java_xml_integration\Ex_Files_XML_Java\Ex_Files_XML_Java\Exercise Files\03_DOM\DOMAddData.zip"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">

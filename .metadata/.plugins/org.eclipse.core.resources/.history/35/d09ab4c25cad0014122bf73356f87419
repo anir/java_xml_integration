@@ -1,0 +1,12 @@
+package com.dbconnect.test;
+
+public class Launcher {
+
+	private static final String USERNAME="dbuser";
+	private static final String PASSWORD="dbpasword";
+	private static final String CONN_STRING="jdbc:mysql://localhost/explorecalifornia";
+	
+	public static void main(String [] args){
+		Class.forName("com.mysql.jdbc.Driver");
+	}
+}

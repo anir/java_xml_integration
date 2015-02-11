@@ -20,7 +20,7 @@ public class Launcher {
 			System.out.println("connected..");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			System.err.println(e);
+			
 		}finally{
 			if(conn != null){
 				conn.close();

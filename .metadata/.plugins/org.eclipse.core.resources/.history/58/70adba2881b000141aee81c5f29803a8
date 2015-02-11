@@ -1,0 +1,24 @@
+package com.dbconnect.test;
+
+import java.sql.Connection;
+
+public class DBUtil {
+	private static final String USERNAME="dbuser";
+	private static final String PASSWORD="dbpassword";
+	private static final String M_CONN_STRING="jdbc:mysql://localhost/explorecalifornia";
+	private static final String CONN_STRING="jdbc:hsqldb:data/explorecalifornia";
+	
+	
+	public static Connection getConnection(DB_TYPE db_type){
+		switch (db_type) {
+		case MYSQL:
+			
+			break;
+		case HSQLDB:
+			
+			break;
+		default:
+			break;
+		}
+	}
+}

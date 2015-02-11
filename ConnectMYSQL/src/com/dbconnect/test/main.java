@@ -6,6 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import com.dbconnect.tables.States;
+import com.dbconnect.tables.Tours;
+
 public class main {
 
 	public static void main(String [] args) throws SQLException{
@@ -17,11 +20,8 @@ public class main {
 				Statement smt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 				ResultSet rs = smt.executeQuery("select stateId, stateName from states");
 				){
-			//conn = DriverManager.getConnection(CONN_STRING, USERNAME, PASSWORD);
+			States.displayData(rs);
 			
-			rs.last();
-			System.out.println(rs.getRow());
-			System.out.println("connected..");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			DBUtil.processException(e);

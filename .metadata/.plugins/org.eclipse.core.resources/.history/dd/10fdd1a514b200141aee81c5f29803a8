@@ -1,0 +1,12 @@
+package com.dbconnect.tables;
+
+import java.sql.ResultSet;
+
+public class Tours {
+
+	public static void displayData(ResultSet rs){
+		while(rs.next()){
+			StringBuffer buffer = new StringBuffer();
+		}
+	}
+}

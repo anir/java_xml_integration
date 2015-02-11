@@ -1,0 +1,13 @@
+package com.dbconnect.tables;
+
+import java.sql.ResultSet;
+
+public class States {
+	public static void displayData(ResultSet rs){
+		while(rs.next()){
+			String stateFullName = 
+					rs.getString("stateId") + ":" + rs.getString("stateName");
+			System.out.println(stateFullName);
+		}
+	}
+}

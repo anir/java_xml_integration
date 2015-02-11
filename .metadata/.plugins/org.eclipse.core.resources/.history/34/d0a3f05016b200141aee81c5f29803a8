@@ -1,0 +1,9 @@
+package com.dbconnect.tables;
+
+import java.sql.ResultSet;
+
+public class States {
+	public static void displayData(ResultSet rs){
+		
+	}
+}
